@@ -149,6 +149,29 @@ a {
     }
 }
 
+@media (width: 1024px) and (height: 670px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #content {
+        text-align: center;
+    }
+
+    .button, .contact-button, .project-button, .education-button {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #intro {
+        text-align: center;
+        width: 100%;
+    }
+}
+
 /* Ensuring 3D computer and portfolio buttons stay on the right */
 #computer, #portfolio {
     position: absolute;
