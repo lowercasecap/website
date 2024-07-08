@@ -1,16 +1,8 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body {
     background: linear-gradient(#631ba8, #7e58a0);
     background-repeat: no-repeat;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure body is at least 100vh */
-}
 
 h1, h2, h3, h4, li {
     color: white;
@@ -91,7 +83,7 @@ a {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
-#education1, #education2, #education3, #other {
+#education1, #education2, #education3, #other, #other1 {
     display: flex;
     align-items: center;
 }
@@ -101,16 +93,8 @@ a {
     text-align: center;
 }
 
-#content {
-    flex: 1;
-}
-
 /* Media query for screens larger than 1300px */
 @media (min-width: 1300px) {
-    html, body {
-        height: 100%;
-    }
-
     body {
         display: flex;
         justify-content: center;
@@ -135,16 +119,13 @@ a {
 
 /* Media query for screens smaller than 1300px */
 @media (max-width: 1299px) {
-    html, body {
-        height: 100%;
-    }
-
     body {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
     }
+
     
     #content {
         text-align: left;
@@ -159,38 +140,11 @@ a {
         text-align: left;
         width: 100%;
     }
+    
 }
 
-/* Media query for screens smaller than 549px */
-@media (max-width: 549px) {
-    html, body {
-        height: 100%;
-        background: linear-gradient(#631ba8, #7e58a0);
-        background-repeat: no-repeat;
-    }
-
-    body {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    #content {
-        text-align: left;
-    }
-
-    .button, .contact-button, .project-button, .education-button {
-        float: left;
-        margin: 0;
-    }
-
-    #intro {
-        text-align: left;
-        width: 100%;
-    }
-
-    #disapear {
+@media (max-width: 549px){
+    #disapear{
         display: none;
     }
 }
@@ -200,5 +154,4 @@ a {
     position: absolute;
     right: 0;
 }
-
 
