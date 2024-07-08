@@ -130,7 +130,8 @@ a {
 
 /* Media query for screens smaller than 1300px */
 @media (max-width: 1299px) {
-    body {
+    body html{
+        height: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
