@@ -1,6 +1,14 @@
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(#631ba8, #7e58a0);
     background-repeat: no-repeat;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3, h4, li {
@@ -92,6 +100,10 @@ a {
     text-align: center;
 }
 
+#content {
+    flex: 1;
+}
+
 /* Media query for screens larger than 1300px */
 @media (min-width: 1300px) {
     body {
@@ -152,4 +164,5 @@ a {
     position: absolute;
     right: 0;
 }
+
 
