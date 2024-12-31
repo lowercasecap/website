@@ -1,180 +1,945 @@
-body {
-    background: linear-gradient(#631ba8, #7e58a0);
-    background-repeat: no-repeat;
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #460146; 
+    height: 100vh;
+    overflow: hidden;
 }
 
 
-h1, h2, h3, h4, li {
+.display{
+    background-color: white;
+    width: 72%; /*Width of the text*/
+    float: right; /*Float the section to the right */
+    height: 94%; /*Set height*/
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    margin-right: 0.5%;
+    border-top-right-radius: 1%; /* Round top right corner*/
+    border-bottom-right-radius: 1%; /*Round bottom right corner*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.info{
+    background-color: #572c57;
+    margin-left: 5%;
+    height: 94%;
+    margin-bottom: 1%;
+    width: 22.5%;
+    margin-top: 0.5%;
+    float: left;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+}
+
+.topbar{
+    margin-bottom: 3%;
+}
+
+.sidebar{
+    margin-top: 1.5%;
+}
+
+
+/*Ryan logo*/
+.ryan {
+    position: fixed; /* Keeps it fixed in the viewport */
+    bottom: 3%;    /* Distance from the bottom of the page */
+    left: 1%;      /* Distance from the left of the page */
+    z-index: 1000;   /* Ensures it stays on top of other elements */
+    background-color: #4f3629; /* Optional styling */
     color: white;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.button, .contact-button, .project-button {
-    align-self: center;
-    background: transparent;
-    background-image: none;
-    background-position: 0 90%;
-    background-repeat: repeat no-repeat;
-    background-size: 4px 3px;
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    box-sizing: border-box;
-    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
     cursor: pointer;
-    display: inline-block;
-    font-family: Neucha, sans-serif;
-    font-size: 1rem;
-    line-height: 23px;
-    outline: none;
-    padding: .75rem;
+}
+
+.linkedIn{
+    position: fixed;
+    bottom: 38%;
+    left: 0%;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 11px;
+    background-color: #460146;
+    color: white;
+}
+
+.linkedIn:hover{
+    background-color: #572c57;
+    color: white;
+}
+/*Button label*/
+.button-label {
+    display: block; /* Puts the label on a new line */
+    margin-top: 5px; /* Space between button and label */
+    font-size: 14px; /* Adjust label font size */
+    color: white; /* Label color */
+    font-family: Arial, sans-serif; /* Optional: change font */
+  }
+
+.Home{
+    position: fixed;
+    bottom: 83%;
+    left: 0.5%;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 11px;
+    background-color: #572c57;
+    color: white;
+}
+
+.Github{
+    position: fixed;
+    bottom: 68%;
+    left: 0.5%;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 11px;
+    background-color: #460146;
+    color: white;
+}
+
+.Github:hover{
+    background-color: #572c57;
+    color: white;
+}
+
+.More {
+    position: fixed;
+    bottom: 53%;
+    left: 0.65%;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 11px;
+    background-color: #460146;
+    color: white;
+}
+
+.More:hover {
+    background-color: #572c57;
+    color: white;
+}
+
+.more-popup {
+    display: none; /* Initially hidden */
+    position: absolute;
+    bottom: 49%; /* Adjust to align with the More button */
+    left: 60px; /* Adjust to the right of the More button */
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #572c57;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.My-info{
+    position: fixed;
+    bottom: 23%;
+    left: 0.65%;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 11px;
+    background-color: #460146;
+    color: white;
+}
+
+.My-info:hover{
+    background-color: #572c57;
+    color: white;
+}
+
+
+
+.menu-item {
+    display: block;
+    margin-bottom: 2%;
+    padding: 1%;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.858);
+    text-align: left;
+    margin-left: 4%;
+    font-size:medium;
+    size: 16px;
+    width: 90%;
+}
+
+.menu-item:hover{
+    background-color:#5c415c;
+}
+
+.menu-item:focus{
+    background-color: white;
+    color: #460146;
+}
+.info h2{
+    color: white;
+    margin-left: 4%;
+}
+
+.info h3{
+    color: rgba(255, 255, 255, 0.732);
+    margin-left: 4%;
+    margin-top: 1%;
+    font-weight: normal;
+}
+
+.hire-me{
+    width: 90%;
+    margin-left: 4%;
+    color: #572c57;
+    height:40px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+.music{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 1%;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.732);
+    text-align: left;
+    margin-left: 4%;
+    size: 14px;
+    width: 90%;
+    font-size: medium;
+}
+
+/* Remove line underneath*/
+a:link{
     text-decoration: none;
-    transition: all 235ms ease-in-out;
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
 
-.education-button {
-    align-self: center;
-    background: transparent;
-    background-image: none;
-    background-position: 0 90%;
-    background-repeat: repeat no-repeat;
-    background-size: 4px 3px;
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    box-sizing: border-box;
-    color: #ffffff;
-    display: inline-block;
-    font-family: Neucha, sans-serif;
-    font-size: 1rem;
-    line-height: 23px;
-    outline: none;
-    padding: .75rem;
-    text-decoration: none;
-    transition: all 235ms ease-in-out;
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+/*The about page */
+
+#about-header{
+    position: sticky;
+    padding: 10px 16px;
+    background: White;
+    color: #000000;
+    border-radius: 5%;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 0%;
 }
 
-.button:hover, .contact-button:hover, .project-button:hover {
-    box-shadow: #ffffff 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
+#about-date{
+    background-color: white;
+    width: 100%;
 }
 
-.button:focus, .contact-button:focus, .project-button:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+
+/* Change #date to .date if you're using a class */
+#date {
+    color: #000000;
+    background-color: white; /* Background color applied here */
+    border-radius: 16px;         /* Rounded corners */
+    padding: 10px 20px;         /* Adjust padding for better appearance */
+    cursor: pointer;           /* Add pointer cursor for buttons */
+    font-size: 14px;           /* Adjust text size */
+    border-width: 0.5px;
+    margin: 4px 2px;
 }
 
-#education1, #education2, #education3, #other, #other1 {
+
+
+
+.line-with-text {
     display: flex;
     align-items: center;
-}
-
-#intro {
-    margin: 0 auto;
     text-align: center;
+    position: relative;
+    margin: 20px 0;
 }
 
-/* Media query for screens larger than 1300px */
-@media (min-width: 1300px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    #content {
-        text-align: center;
-    }
-
-    .button, .contact-button, .project-button, .education-button {
-        float: none;
-        margin: 0 auto;
-    }
-
-    #intro {
-        text-align: center;
-        width: 100%;
-    }
+.line-with-text::before,
+.line-with-text::after {
+    content: "";
+    flex: 1;
+    border-bottom: 0.5px solid #000; /* Adjust color of the line */
+    margin: 0; /* Adjust spacing between the text and the line */
+    border-radius: 5%;
 }
 
-/* Media query for screens smaller than 1300px */
-@media (max-width: 1299px) {
-    body {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
+.line-with-text span {
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Adjust size */
+    color: #000; /* Adjust color */
+    background: transparent; /* Ensure no background color obstructs the line */
+}
+#user-posts {
+    margin-top: 10px;
+    position: relative;
+}
+
+.user-post {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 10px; /* Add space between posts */
+    padding: 5px;
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: white; /* Optional: Background color */
+    position: relative;
+}
+
+.user-post:hover{
+    background-color: #f8f5f5;
+}
+
+.user-icon {
+    font-size: 30px; /* Adjust size of the user icon */
+    color: #098fc0; /* Icon color */
+    margin-right: 10px; /* Space between the icon and user info */
+}
+/*Bill gates user icon*/
+#Gates{
+    font-size: 30px;
+    color: #4f3629;
+    margin-right: 10px;
+}
+
+/*Steve Jobs user icon*/
+#Jobs{
+    font-size: 30px;
+    color: #16df00;
+    margin-right: 10px;
+}
+
+/*Tom Cruise user icon*/
+#Tom{
+    font-size: 30px;
+    color: #b03b05;
+    margin-right: 10px;
+}
+
+#Musk{
+    font-size: 30px;
+    color: #c00952;
+    margin-right: 10px;
+}
+
+.user-post {
+    display: flex; /* Align icon and user-info side by side */
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 15px; /* Space between posts */
+    position: relative;
+}
+
+.user-icon {
+    font-size: 30px; /* Adjust icon size */
+    color: #098fc0; /* Icon color */
+    margin-right: 15px; /* Space between icon and message */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column; /* Stack name, time, and message */
+    flex: 1; /* Allow user-info to take up the remaining space */
+}
+
+.inline-info {
+    display: flex; /* Align name and time inline */
+    align-items: center; /* Vertical alignment */
+    gap: 5px;
+}
+
+.user-info h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.user-info h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+.user-info h5 {
+    margin: 8px 0 0 0; /* Add margin for spacing */
+    font-size: 15px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 1.5;
+}
+
+
+
+
+.about-messages{
+    float: left;
+    background-color: white;
+    border:none;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 3px solid #460146;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.about-messages:hover{
+    border-bottom:3px solid #460146;
+    background-color: #e1dede;
+}
+
+.about-files{
+    float: left;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 0%;
+    font-weight: bold;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.about-files:hover{
+    border-bottom: 3px solid #460146;
+    background-color: #e1dede;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-thumb {
+background: rgba(85, 60, 154, 0.3);
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar-track {
+background-color: #301934;
+}
+#project-images{
+    height: 30%;
+    width: 30%;
+    object-fit: cover;
+}
+
+#reactions {
+    position: absolute;
+    top: -10px; /* Adjust to position above the post */
+    right: 10px; /* Adjust for alignment */
+    display: none; /* Initially hidden */
+    padding: 10px 20px;
+    background-color: white; /* Button color */
+    color: #000000;
+    font-size: smaller;
+    font-style: normal;
+    border-radius: 16px;
+    border-width: 1px;
+    cursor: pointer;
+    z-index: 10; /* Ensures it appears above the content */
+}
+#Likes{
+    position: absolute;
+    top: 60px; /* Adjust to position above the post */
+    right: 10px;
+    padding: 5px 10px;
+    background-color: white; /* Button color */
+    color: #000000;
+    font-size: smaller;
+    font-weight: lighter;
+    font-style: normal;
+    border-radius: 16px;
+    border-width: 0.5px;
+    cursor: pointer;
+    z-index: 10; /* Ensures it appears below the content */
+}
+
+#Likes span{
+    display: inline;
+}
+
+#Likes{
+    font-size: 1rem; /* Adjust icon size */
+    line-height: 1; /* Prevent misalignment */
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+#reactions span {
+    display: inline;
+    gap: 5px; /* Space between icon and text */
+}
+
+#reactions i {
+    font-size: 1rem; /* Adjust icon size */
+    line-height: 1; /* Prevent misalignment */
+    margin-left: 10px;
+    margin-right: 2px;
+    
+}
+
+#reactions:hover {
+    background-color: white; /* Change color on hover */
+}
+
+.user-post:hover #reactions{
+    display: block; /* Show button when parent is hovered */
+}
+
+/*small screens*/
+@media screen and (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%; /* Full-width sidebar */
+        flex-direction: row; /* Align buttons horizontally */
+        overflow-x: auto; /* Scroll if buttons overflow horizontally */
     }
 
-    
-    #content {
-        text-align: left;
+    .display{
+        background-color: white;
+        width: 69%; /*Width of the text*/
+        float: right; /*Float the section to the right */
+        height: 94%; /*Set height*/
+        margin-top: 0.5%;
+        margin-bottom: 1%;
+        margin-right: 0.5%;
+        border-top-right-radius: 1%; /* Round top right corner*/
+        border-bottom-right-radius: 1%; /*Round bottom right corner*/
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
-    
-    .button, .contact-button, .project-button, .education-button {
+    .info{
+        background-color: #572c57;
+        margin-left: 5%;
+        height: 94%;
+        margin-bottom: 1%;
+        width: 25.5%;
+        margin-top: 0.5%;
         float: left;
-        margin: 0;
+        border-top-left-radius: 1%;
+        border-bottom-left-radius: 1%;
     }
 
-    #intro {
-        text-align: left;
-        width: 100%;
+    .button-bar{
+        flex-direction: row;
     }
-    
-}
 
-@media (max-width: 549px){
-    #disapear{
+    .linkedIn{
+        width: 3%;
+        left: 0%;
+    }
+
+    .linkedIn:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .Github{
+        left: 0%;
+        width: 3%;
+    }
+
+    .Github:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .Home{
+        width: 3%;
+        background-color: #460146;
+        left: 0%;
+    }
+    .Home:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .More{
+        width: 3%;
+        left: 0%;
+    }
+
+    .More:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .My-info{
+        width: 3%;
+        left: 0%;
+    }
+
+    .My-info:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .button-label{
         display: none;
     }
-}
 
-@media (width: 1024px) and (height: 670px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    .ryan{
+        width: 4%;
+        left: 0.5%;
+    }
+
+    .sidebar button {
+        font-size: 16px; /* Reduce button size */
+        padding: 8px 10px; /* Adjust padding */
+    }
+
+    .More:hover {
+        background-color: #572c57;
+        color: white;
     }
     
-    #content {
-        text-align: center;
+    .more-popup {
+        position: fixed; /* Fixed to match button position */
+        bottom: 53%; /* Match the button's position */
+        left: calc(0.65% + 80px); /* Adjust dynamically relative to the button */
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%; /* Full-width sidebar */
+        flex-direction: row; /* Align buttons horizontally */
+        overflow-x: auto; /* Scroll if buttons overflow horizontally */
     }
 
-    .button, .contact-button, .project-button, .education-button {
-        float: none;
-        margin: 0 auto;
+    .button-bar{
+        flex-direction: row;
     }
 
-    #intro {
-        text-align: center;
+    .linkedIn{
+        width: 4%;
+        left: 0%;
+    }
+
+    .linkedIn:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .Github{
+        left: 0%;
+        width: 4%;
+    }
+
+    .Github:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .Home{
+        width: 4%;
+        background-color: #460146;
+        left: 0%;
+    }
+
+    .Home:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .More{
+        width: 4%;
+        left: 0%;
+    }
+
+    .More:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .My-info{
+        width: 4%;
+        left: 0%;
+    }
+
+    .My-info:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .ryan{
+        width: 4%;
+        left: 0.5%;
+    }
+
+    .button-label{
+        left: 0%;
+        font-size: 10px;
+    }
+
+    .sidebar button {
+        font-size: 26px; /* Reduce button size */
+        padding: 8px 10px; /* Adjust padding */
+    }
+
+    .menu-item {
+        display: block;
+        margin-bottom: 2%;
+        padding: 1%;
+        background: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.858);
+        text-align: left;
+        margin-left: 4%;
+        font-size:larger;
+        size: 26px;
+        width: 90%;
+    }
+    .More:hover {
+        background-color: #572c57;
+        color: white;
+    }
+    
+    .more-popup {
+        position: fixed; /* Fixed to match button position */
+        bottom: 53%; /* Match the button's position */
+        left: calc(0.65% + 80px); /* Adjust dynamically relative to the button */
+    }
+}
+
+@media screen and (min-width: 2500px ) and (max-width: 4000px){
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%; /* Full-width sidebar */
+        flex-direction: row; /* Align buttons horizontally */
+        overflow-x: auto; /* Scroll if buttons overflow horizontally */
+    }
+
+    .button-bar{
+        flex-direction: row;
+    }
+
+    .linkedIn{
+        width: 5%;
+        left: 0%;
+    }
+
+    .linkedIn:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .Github{
+        left: 0%;
+        width: 5%;
+    }
+
+    .Github:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .Home{
+        width: 5%;
+        background-color: #460146;
+        left: 0%;
+    }
+
+    .Home:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .More{
+        width: 5%;
+        left: 0%;
+    }
+
+    .More:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .My-info{
+        width: 5%;
+        left: 0%;
+    }
+
+    .My-info:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .ryan{
+        left: 1%;
+        width: 3%;
+    }
+
+
+    .button-label{
+        left: 0%;
+        font-size: 16px;
+    }
+
+    .sidebar button {
+        font-size: 36px; /* Reduce button size */
+        padding: 8px 10px; /* Adjust padding */
+    }
+
+    .menu-item {
+        display: block;
+        margin-bottom: 2%;
+        padding: 1%;
+        background: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.858);
+        text-align: left;
+        margin-left: 4%;
+        font-size:20px;
+        size: 26px;
+        width: 90%;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .More:hover {
+        background-color: #572c57;
+        color: white;
+    }
+    
+    .more-popup {
+        position: fixed; /* Fixed to match button position */
+        bottom: 53%; /* Match the button's position */
+        left: calc(0.65% + 80px); /* Adjust dynamically relative to the button */
+    }
+}
+
+@media screen and (max-width: 734px ){
+    .More:hover {
+        background-color: #572c57;
+        color: white;
+    }
+
+    .hire-me{
+        font-size: small;
+    }
+
+    #project-images{
         width: 100%;
     }
-}
+    
+    .more-popup {
+        position: fixed; /* Fixed to match button position */
+        bottom: 53%; /* Match the button's position */
+        left: calc(0.65% + 80px); /* Adjust dynamically relative to the button */
+    }
+    .linkedIn{
+        width: 8%;
+        left: 0%;
+    }
 
-/* Ensuring 3D computer and portfolio buttons stay on the right */
-#computer, #portfolio {
-    position: absolute;
-    right: 0;
-}
+    .linkedIn:hover{
+        background-color: #572c57;
+        color: white;
+    }
 
+    .Github{
+        left: 0%;
+        width: 08%;
+    }
+
+    .Github:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .Home{
+        width: 8%;
+        background-color: #460146;
+        left: 0%;
+    }
+
+    .Home:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .More{
+        width: 8%;
+        left: 0%;
+        padding: 10px 11px;
+    }
+
+    .More:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .My-info{
+        width: 8%;
+        left: 0%;
+    }
+
+    .My-info:hover{
+        background-color: #572c57;
+        color: white;
+    }
+
+    .ryan{
+        left: 0.5%;
+        width: 10%;
+    }
+    .display{
+        background-color: white;
+        width: 65%; /*Width of the text*/
+        float: right; /*Float the section to the right */
+        height: 94%; /*Set height*/
+        margin-top: 0.5%;
+        margin-bottom: 1%;
+        margin-right: 0.5%;
+        border-top-right-radius: 1%; /* Round top right corner*/
+        border-bottom-right-radius: 1%; /*Round bottom right corner*/
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .info{
+        background-color: #572c57;
+        margin-left: 9%;
+        height: 94%;
+        margin-bottom: 1%;
+        width: 25.5%;
+        margin-top: 0.5%;
+        float: left;
+        border-top-left-radius: 1%;
+        border-bottom-left-radius: 1%;
+    }
+}
