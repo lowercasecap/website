@@ -9,91 +9,83 @@
     <link rel="icon" type="image/png" sizes="512x512" href="Favicon/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Ryan Werness</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <section>
-        <button class="button" role="button" ><a href="https://ryan-werness.com/" target="_blank">Home</a></button>
-        <button class="button" role="button"><a href="https://3ddesktop.ryan-werness.com" target="_blank">3D Computer</a></button>
-        <button class="button" role="button"><a href="https://pirateship.ryan-werness.com" traget="_blank">Pirate Ship</a></button>
-    </section>
-
-    <div id="intro">
-        <h1>RYAN WERNESS</h1>
-        <h2>Creative developer</h2>
-        <h3>Creative developer and Paramedic living in Fargo, ND.</h3>
-        <h3>Click on the links in the top to view my 3D applications!</h3>
-        <h5>*For optimal viewing, consider using a laptop/desktop.</h5>
-        <h3>My 3D creations are made from scratch using React, Three.js, Blender, etc.</h3>
-    </div>
-    <br>
-    <h1>CONTACT</h1>
-    <div id="contact">
+    
+    <div class="sidebar">
+        <div class="top-bar">
+            
+        </div>
+          <button class="ryan"><i class="fa-solid fa-r"></i></button>
+        <a href="https://www.linkedin.com/in/ryanwerness/" target="_blank"><button class="linkedIn"><i class="fa-brands fa-linkedin fa-lg"></i><span class="button-label">LinkedIn</span></button></a>
+        <a href="https://ryan-werness.com/"><button class="Home" ><i class="fa-solid fa-house-chimney"></i><span class="button-label">Home</span></button></a>
+        <a href="https://github.com/lowercasecap"target="_blank"><button class="Github" ><i class="fa-brands fa-github"></i><span class="button-label"> Github </span></button></a>
+        <button class="My-info"><i class="fa-solid fa-ellipsis"></i><span class="button-label">More</span></button>
+        <button class="More"><i class="fa-regular fa-message"></i><span class="button-label">DM's</span></button>
+        <div class="more-popup" id="more-popup">
+          <h3>Direct Messages</h3>
+          <hr>
+          <div class="user-post">
+              <i class="fa-solid fa-user user-icon" id="Musk"></i>
+              <div class="user-info">
+                  <div class="inline-info">
+                      <h3>Elon Musk</h3>
+                      <h4>1:48 AM</h4>
+                  </div>
+                  <h5>Hey, can I borrow $20?</h5>
+                  
+              </div>
+          </div>
+          <hr>
+          <div class="user-post">
+            <i class="fa-solid fa-user user-icon"></i>
+            <div class="user-info">
+                <div class="inline-info">
+                    <h3>Ryan Werness (you)</h3>
+                    <h4>Yesterday 5:55 AM</h4>
+                </div>
+                <h5>This is your space. Draft messages, list your to-do's or keep links and files handy.</h5>
+            </div>
+        </div>
         
-        <button class="contact-button" role="button"><a href="https://www.linkedin.com/in/ryan-werness-7438b618b/" target="_blank">LinkedIn</a></section>
-        <button class="contact-button" role="button"><a href="https://github.com/lowercasecap" target="_blank">GitHub</a></section>
-        <button class="contact-button" role="button"><a href="mailto:ryan.werness@gmail.com">ryan.werness@gmail.com</a></section>
+      </div>
+      
+
 
     </div>
-    <h1>PROJECTS</h1>
-    <div id="Projects">
+    <div class="display"id="info">
         
-        <button class="project-button" role="button"><a href="https://github.com/lowercasecap/Security_System" target="_blank">Security System</a></button>
-        <button class="project-button" role="button"><a href="https://github.com/lowercasecap/Scrabble_Helper" target="_blank">Scrabble Helper</a></button>
-        <button class="project-button" role="button"><a href="https://github.com/lowercasecap/ARFaceFilters" target="_blank">Face Filters</a></button>
+
+
+    </div>
+    <div class="info" >
+        <h3>My Portfolio <i class="fa-solid fa-chevron-down"></i></h3>
+        <div class="content-display" id="content-display">
+            <a href="mailto:ryan.werness@gmail.com?subject=Portflio Inquery"><button class="hire-me"><i class="fa-solid fa-rocket"></i> Collaborate</button></a>
+            <a href="https://open.spotify.com/playlist/37i9dQZF1EIhfM6gyvS9M5" target="_blank"><button class="music"><i class="fa-solid fa-headphones"></i>  Huddles</button></a>
+        </div>
         <br>
-        <button class="project-button" role="button"><a href="https://github.com/lowercasecap/ArResume" target="_blank">AR Resume</a></button>
-        <button class="project-button" role="button"><a href="https://github.com/lowercasecap/Youtube_downloader" target="_blank">Youtube Downloader</a></button>
-        <button class="project-button" role="button"><a href="https://github.com/lowercasecap/3DAmbulance" target="_blank">3D Ambulance</a></button>
-    </div>
-    <h1>EDUCATION</h1>
-    <div id="education1">
-        
-        <button class="education-button" role="button">Software Engineering, AAS</button>
-        <h1>&#x2192;</h1>
-        <button class="education-button" role="button">NDSCS</button>
-        <h1>&#x2192;</h1>
-        <button class="education-button" role="button">08/2022 &#x2192; 05/2024</button>
-        <br>
-    </div>
-    <div id="education2">
-        <button class="education-button" role="button">Computer Science, BS/MS</button>
-        <h1>&#x2192;</h1>
-        <button class="education-button" role="button">University of North Dakota</button>
-        <h1>&#x2192;</h1>
-        <button class="education-button" role="button">01/2025 &#x2192; 05/2026</button>
-        <h4 id="disapear">*Online instruction</h4>
-    </div>
+        <div class="menu">
+            <h3><i class="fa-solid fa-caret-down"></i> Channels</h3>
+            <button class="menu-item" onclick="showContent('about')"># About</button>
+            <button class="menu-item" onclick="showContent('projects')"># Projects</button> 
+            <button class="menu-item" onclick="showContent('Education')"># Education</button>
+        </div>
+        <div class="messages">
+            <h3><i class="fa-solid fa-caret-down"></i> Direct Messages</h3>
+            <button class="menu-item" onclick="showContent('Tom Cruise')"><i class="fa-regular fa-user"></i> Tom Cruise</button>
+            <button class="menu-item" onclick="showContent('Elon Musk')"><i class="fa-regular fa-user"></i> Elon Musk</button>
+            <button class="menu-item" onclick="showContent('Bill Gates')"><i class="fa-regular fa-user"></i> Bill Gates</button>
+            <button class="menu-item" onclick="showContent('Steve Jobs')"><i class="fa-regular fa-user"></i> Steve Jobs</button>
+        </div>
 
-    <div id="education3">
-        <button class="education-button" role="button">Paramedicine, CERT</button>
-        <h1>&#x2192;</h1>
-        <button class="education-button" role="button">NDSCS</button>
-        <h1>&#x2192;</h1>
-        <button class="education-button" role="button">08/2016 &#x2192; 08/2017</button>
     </div>
-
-    <h1>OTHER</h1>
-    <div id="other">
-        <button class="education-button" role="button">Honors Society</button>
-        <h1>&#x2192;</h1>
-        <button class="education-button" role="button">International Honor Society</button>
-        <h1>&#x2192;</h1>
-        <button class="education-button" role="button">Maintained a 4.0 last 6 semesters</button>
-    </div>
-    <div id="other1">
-      <button class="education-button" role="button">Paramedic</button>
-      <h1>&#x2192;</h1>
-      <button class="education-button" role="button">7 Years</button>
-    </div>
-
-
+    <script src="script.js"></script>    
   </body>
-  <footer>
-    <br>
-    <br>
-    <br>
-    <h4>© 2024 ryan-werness.com</h4>
-  </footer>
+    
 </html>
